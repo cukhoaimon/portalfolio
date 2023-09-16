@@ -47,6 +47,16 @@
 	color: var(--secondary-color);
 }
 
+.project-duration {
+	color: var(--tertiary-color);
+	font-size: 80%;
+}
+
+.project-tag {
+	color: var(--link-color);
+	font-size: 80%;
+}
+
 .project-link {
 	display: flex;
 	align-items: center;

@@ -33,31 +33,28 @@ const Projects = () => {
 				<NavBar active="projects" />
 				<div className="content-wrapper">
 					<div className="projects-logo-container">
-						<div className="projects-logo">
-							<Logo width={46} />
-						</div>
+						<Logo width={46} localClass="projects-logo" />
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
+							Things I've made, taught myself a bit. And all of
+							these builds a bite.
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
+							I have worked on various projects in different
+							fields, both during my university studies and my
+							self-taught process. These fields include Web
+							backend/frontend, Android security, Android
+							automation testing, operating systems, computer
+							networking, AI/ML, and more. Working on numerous
+							projects has provided me with a broad perspective on
+							the field of Information Technology and has helped
+							me identify the future path I will pursue.
 						</div>
 
 						<div className="projects-list">
-							<AllProjects />
+							<AllProjects customFlex={{ width: "100%" }} />
 						</div>
 					</div>
 					<div className="page-footer">

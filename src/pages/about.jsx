@@ -33,9 +33,7 @@ const About = () => {
 				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
-						<div className="about-logo">
-							<Logo width={46} />
-						</div>
+						<Logo width={46} localClass="about-logo" />
 					</div>
 
 					<div className="about-container">

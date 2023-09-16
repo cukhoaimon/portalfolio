@@ -6,7 +6,8 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logo, title, description, linkText, link } = props;
+	const { logo, title, duration, description, tag, linkText, link, shorten } =
+		props;
 
 	return (
 		<React.Fragment>
@@ -17,7 +18,18 @@ const Project = (props) => {
 							<img src={logo} alt="logo" />
 						</div>
 						<div className="project-title">{title}</div>
-						<div className="project-description">{description}</div>
+						<div className="project-duration">{duration}</div>
+						<div className="project-description">
+							{shorten
+								? description
+										.split(" ")
+										.slice(0, 18)
+										.join(" ") + " ..."
+								: description}
+						</div>
+						<div className="project-tag">
+							Technologies: {tag?.join(", ")}
+						</div>
 						<div className="project-link">
 							<div className="project-link-icon">
 								<FontAwesomeIcon icon={faLink} />

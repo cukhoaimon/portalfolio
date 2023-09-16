@@ -6,7 +6,7 @@ import INFO from "../../data/user";
 import "./styles/logo.css";
 
 const Logo = (props) => {
-	let { width, link } = props;
+	let { width, link, localClass } = props;
 
 	if (link === undefined) {
 		link = true;
@@ -17,9 +17,9 @@ const Logo = (props) => {
 	);
 
 	return (
-		<React.Fragment>
+		<div className={localClass}>
 			{link ? <Link to="/">{imageElement}</Link> : imageElement}
-		</React.Fragment>
+		</div>
 	);
 };
 

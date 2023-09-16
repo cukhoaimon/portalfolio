@@ -21,9 +21,7 @@ const Notfound = () => {
 				<NavBar />
 				<div className="content-wrapper">
 					<div className="notfound-logo-container">
-						<div className="projects-logo">
-							<Logo width={46} />
-						</div>
+						<Logo width={46} localClass="projects-logo" />
 					</div>
 					<div className="notfound-container">
 						<div className="notfound-message">
