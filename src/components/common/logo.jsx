@@ -4,13 +4,14 @@ import INFO from "../../data/user";
 
 import "./styles/logo.css";
 
-const Logo = () => {
+const Logo = ({ localClass }) => {
 	const imageElement = (
 		<img src={INFO.main.logo} alt="logo" className="logo" width={80} />
 	);
 
 	return (
 		<div
+			className={localClass}
 			style={{
 				display: "flex",
 				position: "fixed",

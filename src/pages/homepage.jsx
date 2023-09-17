@@ -37,7 +37,9 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar />
 				<div className="content-wrapper">
-					<Logo />
+					<div className="homepage-logo-container">
+						<Logo />
+					</div>
 
 					<div className="homepage-container">
 						<div className="homepage-first-area">

@@ -33,7 +33,7 @@ const About = () => {
 				<NavBar />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
-						<Logo width={46} localClass="about-logo" />
+						<Logo />
 					</div>
 
 					<div className="about-container">
