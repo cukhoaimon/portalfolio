@@ -30,7 +30,7 @@ const Projects = () => {
 				<NavBar />
 				<div className="content-wrapper">
 					<div className="projects-logo-container">
-						<Logo width={46} localClass="projects-logo" />
+						<Logo />
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">

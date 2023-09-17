@@ -31,7 +31,7 @@ const Articles = () => {
 				<NavBar />
 				<div className="content-wrapper">
 					<div className="articles-logo-container">
-						<Logo width={46} localClass="articles-logo" />
+						<Logo />
 					</div>
 
 					<div className="articles-main-container">
