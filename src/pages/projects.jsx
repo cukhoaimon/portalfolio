@@ -27,7 +27,7 @@ const Projects = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="projects" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="projects-logo-container">
 						<Logo width={46} localClass="projects-logo" />

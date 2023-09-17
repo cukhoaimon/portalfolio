@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faMailBulk, faSignature } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -73,7 +73,7 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="home" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
@@ -114,6 +114,13 @@ const Homepage = () => {
 								/>
 							</a>
 
+							<a href={INFO.socials.linkedin} rel="noopenner">
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
+
 							<a href={`mailto:${INFO.main.email}`} rel="noopenner">
 								<FontAwesomeIcon
 									icon={faMailBulk}
@@ -132,7 +139,7 @@ const Homepage = () => {
 									icon={faSignature}
 									title="Articles"
 									customBodyStyle={{ paddingTop: "10px" }}
-									hasRef={true}
+									linkTo={"/articles"}
 								>
 									{articles.map((article, index) => (
 										<div

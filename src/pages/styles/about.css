@@ -13,6 +13,10 @@
 	top: 4vh;
 }
 
+.about-link {
+	color: var(--link-color);
+}
+
 .about-container {
 	display: flex;
 	flex-direction: column;

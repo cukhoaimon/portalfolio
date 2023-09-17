@@ -42,7 +42,7 @@
 	font-size: 90%;
 }
 
-.nav-item.active a {
+.active {
 	color: var(--link-color) !important;
 }
 

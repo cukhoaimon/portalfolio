@@ -4,11 +4,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles/card.css";
 import { useNavigate } from "react-router-dom";
 
-const Card = (props) => {
-	const { icon, title, children, customBodyStyle, hasRef } = props;
+const Card = props => {
+	const {
+		icon,
+		title,
+		children,
+		customBodyStyle,
+		customCardStyle,
+		linkTo,
+		stringLink
+	} = props;
 	const navigate = useNavigate();
 	return (
-		<div className="card">
+		<div
+			className="card"
+			style={customCardStyle || {}}
+			onClick={stringLink ? () => window.open(stringLink) : null}
+		>
 			<div className="card-container">
 				<div className="card-header">
 					<div className="card-icon">
@@ -16,11 +28,7 @@ const Card = (props) => {
 					</div>
 					<div
 						className="card-title"
-						onClick={
-							hasRef
-								? () => navigate(`${title.toLowerCase()}`)
-								: null
-						}
+						onClick={linkTo ? () => navigate(`${linkTo.toLowerCase()}`) : null}
 					>
 						{title}
 					</div>

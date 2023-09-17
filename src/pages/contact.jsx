@@ -27,7 +27,7 @@ const Contact = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="contact" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="contact-logo-container">
 						<Logo width={46} localClass="contact-logo" />

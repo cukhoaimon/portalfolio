@@ -9,18 +9,14 @@ import Work from "./work";
 const Works = () => {
 	return (
 		<div className="works">
-			<Card icon={faBriefcase} title="Work" hasRef={null}>
+			<Card icon={faBriefcase} title="Work">
 				<div className="works-body">
 					<Work
 						title="Computer Security Club - FIT@HCMUS"
 						subtitle="Researcher"
 						duration="March 2023 - Present"
 						img={
-							<img
-								src="./blackpinker.jpg"
-								alt="work"
-								className="work-image"
-							/>
+							<img src="./blackpinker.jpg" alt="work" className="work-image" />
 						}
 					/>
 
@@ -28,13 +24,7 @@ const Works = () => {
 						title="Google Developer Clubs VNUHCM-US"
 						subtitle="Backend specialist"
 						duration="November 2022 - Present"
-						img={
-							<img
-								src="./gdsc.png"
-								alt="work"
-								className="work-image"
-							/>
-						}
+						img={<img src="./gdsc.png" alt="work" className="work-image" />}
 					/>
 
 					<Work

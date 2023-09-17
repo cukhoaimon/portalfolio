@@ -28,7 +28,7 @@ const Articles = () => {
 			</Helmet>
 
 			<div className="page-content">
-				<NavBar active="articles" />
+				<NavBar />
 				<div className="content-wrapper">
 					<div className="articles-logo-container">
 						<Logo width={46} localClass="articles-logo" />
