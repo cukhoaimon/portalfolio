@@ -16,17 +16,14 @@ const About = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "about");
+	const currentSEO = SEO.find(item => item.page === "about");
 
 	return (
 		<React.Fragment>
 			<Helmet>
 				<title>{`About | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
+				<meta name="keywords" content={currentSEO.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -39,9 +36,7 @@ const About = () => {
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-right-side">
-								<div className="title about-title">
-									{INFO.about.title}
-								</div>
+								<div className="title about-title">{INFO.about.title}</div>
 
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
@@ -51,11 +46,7 @@ const About = () => {
 							<div className="about-left-side">
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
-										<img
-											src="about.jpg"
-											alt="about"
-											className="about-image"
-										/>
+										<img src="about.jpg" alt="about" className="about-image" />
 									</div>
 								</div>
 
@@ -68,9 +59,7 @@ const About = () => {
 							<Socials />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

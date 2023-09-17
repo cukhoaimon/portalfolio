@@ -16,17 +16,14 @@ const Projects = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
-	const currentSEO = SEO.find((item) => item.page === "projects");
+	const currentSEO = SEO.find(item => item.page === "projects");
 
 	return (
 		<React.Fragment>
 			<Helmet>
 				<title>{`Projects | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
+				<meta name="keywords" content={currentSEO.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -37,19 +34,17 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							Things I've made, taught myself a bit. And all of
-							these builds a bite.
+							Things I've made, taught myself a bit. And all of these builds a
+							bite.
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							I have worked on various projects in different
-							fields, both during my university studies and my
-							self-taught process. These fields include Web
-							backend/frontend, Android security, Android
-							automation testing, operating systems, computer
-							networking, AI/ML, and more. Working on numerous
-							projects has provided me with a broad perspective on
-							the field of Information Technology and has helped
+							I have worked on various projects in different fields, both during
+							my university studies and my self-taught process. These fields
+							include Web backend/frontend, Android security, Android automation
+							testing, operating systems, computer networking, AI/ML, and more.
+							Working on numerous projects has provided me with a broad
+							perspective on the field of Information Technology and has helped
 							me identify the future path I will pursue.
 						</div>
 
@@ -57,9 +52,7 @@ const Projects = () => {
 							<AllProjects customFlex={{ width: "100%" }} />
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
+					<Footer />
 				</div>
 			</div>
 		</React.Fragment>

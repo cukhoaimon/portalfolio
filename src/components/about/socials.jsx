@@ -1,50 +1,53 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+	faGithub,
+	faLinkedin,
+	faFacebookF
+} from "@fortawesome/free-brands-svg-icons";
 
 import INFO from "../../data/user";
 
 import "./styles/socials.css";
 
-const Socials = () => {
+const Socials = ({ hasFacebook }) => {
 	return (
 		<div className="socials">
 			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
+				<a href={INFO.socials.github} rel="noopenner">
 					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faGithub}
-							className="social-icon"
-						/>
+						<FontAwesomeIcon icon={faGithub} className="social-icon" />
 					</div>
 					<div className="social-text">Follow on GitHub</div>
 				</a>
 			</div>
 
 			<div className="social">
-				<a
-					href={INFO.socials.linkedin}
-					target="_blank"
-					rel="noreferrer"
-				>
+				<a href={INFO.socials.linkedin} rel="noopenner">
 					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faLinkedin}
-							className="social-icon"
-						/>
+						<FontAwesomeIcon icon={faLinkedin} className="social-icon" />
 					</div>
 					<div className="social-text">Follow on LinkedIn</div>
 				</a>
 			</div>
 
+			{hasFacebook ? (
+				<div className="social">
+					<a href={INFO.socials.facebook} rel="noopenner">
+						<div className="social-icon">
+							<FontAwesomeIcon icon={faFacebookF} className="social-icon" />
+						</div>
+						<div className="social-text">Follow on Facebook</div>
+					</a>
+				</div>
+			) : (
+				<></>
+			)}
+
 			<div className="email">
 				<div className="email-wrapper">
-					<a
-						href={`mailto:${INFO.main.email}`}
-						target="_blank"
-						rel="noreferrer"
-					>
+					<a href={`mailto:${INFO.main.email}`} rel="noopenner">
 						<div className="social-icon">
 							<FontAwesomeIcon icon={faEnvelope} />
 						</div>

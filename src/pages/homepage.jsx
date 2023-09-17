@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMailBulk, faSignature } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faMailBulk, faSignature } from "@fortawesome/free-solid-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -14,7 +14,7 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import articles from "../data/articles";
 
 import "./styles/homepage.css";
 import Card from "../components/common/card";
@@ -52,7 +52,7 @@ const Homepage = () => {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [logoSize, oldLogoSize]);
 
-	const currentSEO = SEO.find((item) => item.page === "home");
+	const currentSEO = SEO.find(item => item.page === "home");
 
 	const logoStyle = {
 		display: "flex",
@@ -61,7 +61,7 @@ const Homepage = () => {
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",
-		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
+		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none"
 	};
 
 	return (
@@ -69,10 +69,7 @@ const Homepage = () => {
 			<Helmet>
 				<title>{INFO.main.title}</title>
 				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
+				<meta name="keywords" content={currentSEO.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -110,22 +107,14 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href={INFO.socials.github} rel="noopenner">
 								<FontAwesomeIcon
 									icon={faGithub}
 									className="homepage-social-icon"
 								/>
 							</a>
 
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href={`mailto:${INFO.main.email}`} rel="noopenner">
 								<FontAwesomeIcon
 									icon={faMailBulk}
 									className="homepage-social-icon"
@@ -134,10 +123,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects
-								shorten={true}
-								customLink={"projects"}
-							/>
+							<AllProjects shorten={true} customLink={"projects"} />
 						</div>
 
 						<div className="homepage-after-title">
@@ -148,19 +134,17 @@ const Homepage = () => {
 									customBodyStyle={{ paddingTop: "10px" }}
 									hasRef={true}
 								>
-									{myArticles.map((article, index) => (
+									{articles.map((article, index) => (
 										<div
 											className="homepage-article"
 											key={(index + 1).toString()}
 										>
 											<Article
 												key={(index + 1).toString()}
-												date={article().date}
-												title={article().title}
-												description={
-													article().description
-												}
-												link={"/article/" + (index + 1)}
+												date={article.date}
+												title={article.title}
+												description={article.description}
+												link={article.link}
 											/>
 										</div>
 									))}
@@ -172,9 +156,7 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="page-footer">
-							<Footer />
-						</div>
+						<Footer />
 					</div>
 				</div>
 			</div>
