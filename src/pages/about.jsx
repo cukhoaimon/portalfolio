@@ -48,7 +48,7 @@ const About = () => {
 								<Card
 									icon={faFilePdf}
 									title="Resume"
-									stringLink="https://drive.google.com/file/d/1vw6Qpg5wUHHvfBMScwysQpJqgDgDOksK/view?usp=sharing"
+									stringLink="https://drive.google.com/file/d/1TmjciohSWm2VNqTmhcXd9Xamc8d-TikW/view?usp=sharing"
 									customCardStyle={{
 										marginTop: "30px",
 										marginRight: "40px"

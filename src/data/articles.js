@@ -1,5 +1,23 @@
 const articles = [
 	{
+		title: "A complete overview of SSL/TLS and its cryptographic system",
+		date: "February 2, 2024",
+		description: `
+		SSL/TLS is a cryptographic protocol that provides secure communications over a computer network. This blog is a comprehensive overview of SSL/TLS and its cryptographic system.
+		`,
+		link:
+			"https://tan-egg-884.notion.site/A-complete-overview-of-SSL-TLS-and-its-cryptographic-system-fc1842f256ff4c228360246987402b55?pvs=4"
+	},
+	{
+		title: "What is “N+1 queries” problem?",
+		date: "January 8, 2024",
+		description: `
+		When we use ORM, we often face with N+1 queries problem. This blog is explain about it.
+		`,
+		link:
+			"https://tan-egg-884.notion.site/What-is-N-1-queries-problem-2339dcc33171473c9b7ab2eb3b9ad97c?pvs=4"
+	},
+	{
 		title: "How React Works Behind The Scenes?",
 		date: "August 26, 2023",
 		description: `

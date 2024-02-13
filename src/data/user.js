@@ -7,7 +7,7 @@ const INFO = {
 	},
 
 	socials: {
-		github: "https://github.com/phucmapcaumieu",
+		github: "https://github.com/cukhoaimon",
 		linkedin: "https://linkedin.com/hoangphuchcmus",
 		facebook: "https://facebook.com/tuilafuc"
 	},
@@ -34,14 +34,64 @@ const INFO = {
 
 	projects: [
 		{
+			title: "Simple Bank",
+			duration: "Jannuary 11, 2024 - Present",
+			description: `A project for learning about the basic of banking system. It's a simple bank system with basic features. This project is also a study case for learning about the basic of OOP, SOLID principle, ACID properties, design pattern and some common technologies.`,
+			logo: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg",
+			linkText: "View Project",
+			tag: [
+				"Go",
+				"Docker",
+				"gRPC",
+				"gRPC-Gateway",
+				"Paseto",
+				"Github",
+				"GoLand",
+				"PostgreSQL",
+				"Gin",
+				"GoMock",
+				"SQLC"
+			],
+			link: "https://github.com/cukhoaimon/SimpleBank"
+		},
+		{
+			title: "The Coffee Choi",
+			duration: "December 2023 - Jannuary 2024",
+			description: "A school project for the course of Web development",
+			linkText: "View Project",
+			logo:
+				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+			tag: ["React", "MaterialUI", "NodeJS", "MongoDB", "Github"],
+			link: "https://github.com/let-me-out-HCMUS/The-Coffee-Choi"
+		},
+		{
+			title: "My Shop",
+			duration: "December 2023 - Jannuary 2024",
+			description: `A project for learning about the basic of e-commerce system. It's a simple e-commerce system with basic features. This project is also a study case for learning about the basic of OOP, SOLID principle, ACID properties, design pattern and some common technologies.`,
+			linkText: "View Project",
+			logo: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg",
+			tag: ["Go", "C#", "WinUI 3", "Telerik", "Docker", "Swagger"],
+			link: "https://github.com/scul0405/my-shop"
+		},
+		{
+			title: "Dental Clinic Management System",
+			duration: "December 2023 - Jannuary 2024",
+			description: `A school project for learning about conccurency and parallel programming. This project also a study case about phenomenon of deadlock and database transaction.`,
+			logo:
+				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+			linkText: "View Project",
+			tag: ["React", "NodeJS", "MSSQL", "Github"],
+			link: "https://github.com/cukhoaimon/dental-clinic-management-system"
+		},
+		{
 			title: "My-React-App",
-			duration: "August 2023 - Present",
+			duration: "August 2023 - December 2023",
 			description: `A project which I developed a lot of web application for learning React. Experimented with React State, React Hooks, React Routing, Fiber tree, and more. I also solved problems relating to asynchronous tasks`,
 			logo:
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
 			linkText: "View Project",
 			tag: ["JavaScript", "React", "HTML/CSS", "Github", "VS Code"],
-			link: "https://github.com/phucmapcaumieu/My-React-App"
+			link: "https://github.com/cukhoaimon/My-React-App"
 		},
 
 		{
@@ -61,7 +111,7 @@ const INFO = {
 				"Android Developer Brigde",
 				"QEMu"
 			],
-			link: "https://github.com/phucmapcaumieu/Shelljar"
+			link: "https://github.com/cukhoaimon/Shelljar"
 		},
 
 		{
@@ -73,7 +123,7 @@ const INFO = {
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
 			linkText: "View Project",
 			tag: ["Java Spring Boot", "Docker compose", "Cassandra", "Intellij IDE"],
-			link: "https://github.com/phucmapcaumieu/Post-backend"
+			link: "https://github.com/cukhoaimon/Post-backend"
 		},
 
 		{
@@ -85,7 +135,7 @@ const INFO = {
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
 			linkText: "View Project",
 			tag: ["C++", "DLL", "COM", "Visual Studio", "MS-build"],
-			link: "https://github.com/phucmapcaumieu/ShapeParserV2"
+			link: "https://github.com/cukhoaimon/ShapeParserV2"
 		},
 		{
 			title: "Learning Machine Learning",
@@ -96,7 +146,7 @@ const INFO = {
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
 			tag: ["Python", "Jupyter Notebook", "Google Colaboration"],
 			linkText: "View Project",
-			link: "https://github.com/phucmapcaumieu/Machine-Learning"
+			link: "https://github.com/cukhoaimon/Machine-Learning"
 		},
 		{
 			title: "Sorting Algorithm Analysis",
@@ -107,7 +157,7 @@ const INFO = {
 				"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
 			tag: ["C++", "Visual Studio", "LATEX"],
 			linkText: "View Project",
-			link: "https://github.com/phucmapcaumieu/sorting-algorithms"
+			link: "https://github.com/cukhoaimon/sorting-algorithms"
 		}
 	]
 };
